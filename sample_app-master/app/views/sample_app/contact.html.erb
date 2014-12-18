@@ -1,0 +1,19 @@
+<% provide(:title,"Contact") %>
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= full_title(yield(:title)) %></title>
+	<%= stylesheet_link_tag "custom.css" %>
+</head>
+<body>
+<%= yield %>
+<%= render 'layouts/header' %>
+<div class="content">
+	<div class="content-wrap">
+		<p class="p1">Welcome to the contact Sample App</p>
+		<p>You can contact me via email: <a href="https://github.com/tranxuandien/"><em>https://github.com/tranxuandien/</em></a></p>		
+	</div>
+</div>
+<%= render 'layouts/footer' %>
+</body>
+</html>

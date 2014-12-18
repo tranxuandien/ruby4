@@ -1,0 +1,19 @@
+<% provide(:title,"Login") %>
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= full_title(yield(:title)) %></title>
+	<%= stylesheet_link_tag "custom.css" %>
+</head>
+<body>
+<%= yield %>
+<%= render 'layouts/header' %>
+<div class="content">
+	<div class="content-wrap">
+		<p class="p1">Welcome to the Login Sample App</p>
+		<p>Thank you for login.</p>
+	</div>
+</div>
+<%= render 'layouts/footer' %>
+</body>
+</html>

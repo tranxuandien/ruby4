@@ -1,0 +1,27 @@
+<% provide(:title,"About") %>
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= full_title(yield(:title)) %></title>
+	<%= stylesheet_link_tag "custom.css" %>
+</head>
+<body>
+<%= yield %>
+<%= render 'layouts/header' %>
+<div class="content">
+	<div class="content-wrap">
+		<p class="p1">Welcome to the About Sample App</p>
+		<div class="content-about">
+			<p>
+			References : <br />
+			Ruby on Rails Tutorial: <a href="http://www.railstutorial.org/"><em>http://www.railstutorial.org/</em></a><br />
+			Ruby on Rails Books: <a href="http://www.railstutorial.org/book"><em>http://www.railstutorial.org/book</em></a><br />
+			Screencast Series :  <a href="http://screencasts.railstutorial.org/"><em>http://screencasts.railstutorial.org/</em></a><br />
+			Ruby on Rails: <a href="http://rubyonrails.org/"><em>http://rubyonrails.org/</em></a>
+			</p>
+		</div>
+	</div>
+</div>
+<%= render 'layouts/footer' %>
+</body>
+</html>
